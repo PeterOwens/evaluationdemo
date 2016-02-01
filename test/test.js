@@ -5,15 +5,24 @@
 
 	var customerArray, flatCustomerArray, flattenArray;
 
-	flattenArray = function(customerArray) {
-	  return customerArray.reduce((function(buildNewArrayString, arrayToProcess) {
-	    if (Array.isArray(arrayToProcess)) {
-	      return buildNewArrayString.concat(flattenArray(arrayToProcess));
-	    } else {
-	      return buildNewArrayString.concat([arrayToProcess]);
-	    }
-	  }), []);
-	};
+  	flattenArray = function(customerArray) {
+      if (customerArray === null) {
+        return 'Array cannot be null!';
+      }
+      if (customerArray.isArray === false) {
+        return 'Input must be an array!';
+      }
+      if (customerArray === '') {
+        return 'Input must be an array!';
+      }
+      return customerArray.reduce((function(buildNewArrayString, arrayToProcess) {
+        if (Array.isArray(arrayToProcess)) {
+          return buildNewArrayString.concat(flattenArray(arrayToProcess));
+        } else {
+          return buildNewArrayString.concat([arrayToProcess]);
+        }
+      }), []);
+  	};
 
 	//Test a nested array
 	describe('Array', function() {
@@ -66,5 +75,23 @@
 	  });
 	});
 
+    //Test for a null
+	describe('Array', function() {
+	  describe('test for a null input', function() {
+	    it('Result should output to console', function() {
+	     customerArray = null
+	  	 console.log('Result='+flattenArray(customerArray));
 
+	    });
+	  });
+	});
  	
+ 	 //Test for an empty string
+	describe('Array', function() {
+	  describe('test for an empty string as the input', function() {
+	    it('Result should output to console', function() {
+	     customerArray = ''
+	  	 console.log('Result='+flattenArray(customerArray));
+	    });
+	  });
+	});
