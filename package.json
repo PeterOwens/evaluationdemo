@@ -2,9 +2,10 @@
   "name": "evaluationdemo",
   "version": "1.0.0",
   "description": "This demonstrates the flattening of an array of arbitrarily nested arrays of integers into a flat array of integers.",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "test": "node --harmony ./test/mocha-runner"
+    "test": "node --harmony ./test/mocha-runner",
+    "prod": "NODE_ENV=production node index.js"
   },
   "repository": {
     "type": "git",
