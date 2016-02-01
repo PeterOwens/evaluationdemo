@@ -1,6 +1,8 @@
 
 
-	//Flattening an array of arbitrarily nested arrays of integers into a flat array of integers:
+	//Flattens an array of arbitrarily nested arrays of integers
+	//into a flat array of integers
+
 	var customerArray, flatCustomerArray, flattenArray;
 
 	flattenArray = function(customerArray) {
@@ -13,7 +15,7 @@
 	  }), []);
 	};
 
-	//Nested array
+	//Test a nested array
 	describe('Array', function() {
 	  describe('test for a nested array', function() {
 	    it('Result should output to console', function() {
@@ -23,7 +25,7 @@
 	  });
 	});
 
-	//unnested array
+	//Test an unnested array
 	describe('Array', function() {
 	  describe('test for an unnested array', function() {
 	    it('Result should output to console', function() {
@@ -33,7 +35,7 @@
 	  });
 	});
 
-	//Empty array
+	//Test an empty array
 	describe('Array', function() {
 	  describe('test for an empty array', function() {
 	    it('Result should output to console', function() {
@@ -43,7 +45,7 @@
 	  });
 	});
 
-	//Two level nested array
+	//Test a two level nested array
 	describe('Array', function() {
 	  describe('test for a two level nested array', function() {
 	    it('should output to console', function() {
@@ -53,7 +55,7 @@
 	  });
 	});
 
-	//Three level nested array
+	//Test a three level nested array
 	describe('Array', function() {
 	  describe('test for a three level nested array', function() {
 	    it('Result should output to console', function() {
