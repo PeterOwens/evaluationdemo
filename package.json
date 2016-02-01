@@ -4,8 +4,8 @@
   "description": "This demonstrates the flattening of an array of arbitrarily nested arrays of integers into a flat array of integers.",
   "main": "app/index.js",
   "scripts": {
-    "test": "node --harmony ./test/mocha-runner",
-    "prod": "NODE_ENV=production node index.js"
+    "test": "mocha -w",
+    "start": "(coffee --compile --output app --watch src &);node ./app/index.js"
   },
   "repository": {
     "type": "git",
