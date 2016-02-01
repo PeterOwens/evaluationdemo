@@ -1,0 +1,27 @@
+{
+  "name": "evaluationdemo",
+  "version": "1.0.0",
+  "description": "This demonstrates the flattening of an array of arbitrarily nested arrays of integers into a flat array of integers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --harmony ./test/mocha-runner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterOwens/evaluationdemo.git"
+  },
+  "keywords": [
+    "Flatten",
+    "array"
+  ],
+  "author": "Peter Owens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PeterOwens/evaluationdemo/issues"
+  },
+  "homepage": "https://github.com/PeterOwens/evaluationdemo#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.1"
+  }
+}
